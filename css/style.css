@@ -1,0 +1,401 @@
+title{
+    font-size:50px;
+}
+h1{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color:#0e3257;
+    font-size: 50px;
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+    color:#708090;
+    font-family: "Times New Roman", Serif, Georgia;
+}
+
+header{
+    padding: 20px;
+}
+
+p{
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+    font-family: Garamond, Serif, Georgia;
+    color:#0e3257;
+}
+
+footer{
+    padding: 10px;
+    font-size: 10px;
+    background-color: rgb(235, 196, 215) ;
+}
+
+
+li{
+    display: inline;
+}
+
+#about{
+    padding: 10px;
+}
+
+
+#research{
+    width: 50%;
+    border-radius: 50%; 
+}
+
+
+#face_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+#socialmedia{
+    width: 50%;
+    border-radius: 50%;
+}
+
+#connect{
+    width: 50%;
+    border-radius: 50%; 
+}
+
+#paige{
+    max-width: 480px;
+    max-height: 480px;
+}
+
+#lily{
+    max-width: 480px;
+    max-height: 480px;
+}
+
+/* Contact Page Flip Card */
+#email{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.flip-card{
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 10px;
+
+}
+
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.flip-card-front{
+    background-color: #b9dbff;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Skip to content */
+
+.skip-to-content-link a{
+    background: rgb(255, 255, 255);
+    left: 0px;
+    padding: 6px;
+    position: absolute;
+}
+
+#landing1, #parallax, #landing3, #footer_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.landing_page{
+    text-decoration: none;
+}
+
+/* Gallery */
+
+.gallery{
+    display: flex;
+    min-height: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    padding: 5px;
+}
+.gallery > img{
+    margin: 5px;
+    width: 300px;
+
+}
+
+#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9, #image10, #image11, #image12{
+    border: solid;
+    border-color: grey;
+    border-style: outset;
+}
+
+
+/* Grid About */
+
+.about{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: space-evenly;
+    padding: 50px;
+    grid-gap: 50px;
+    color:#0e3257;
+}
+
+div.item1 {
+    text-align: center;
+}
+div.item2 {
+    text-align: Center;
+    font-size: 25px;
+
+}
+div.item3 {
+    text-align: center;
+
+}
+div.item4 {
+    text-align: center;
+    font-size: 25px;
+}
+    
+
+/* Navbar */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(235, 196, 215);
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-align: center;
+    font-size: 30px; 
+}
+
+.nav_item a{
+    color: rgb(48, 46, 46);
+    text-decoration: none;
+}
+
+.nav_item a:hover, a:focus{
+    color: black;
+    text-decoration: underline;
+}
+
+.nav_links a.active {
+    color:black;
+    /*padding: 80px;*/
+}
+
+
+
+/* Grid Services Page */
+
+.grid-container {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 100%;
+    padding: 70px;
+    grid-gap: 50px;
+    color: #0e3257;
+}
+
+.grid-item1 {
+    text-align: center;
+    padding: 20px;
+}
+.grid-item2 {
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    font-size: 20px;
+}
+.grid-item3 {
+    text-align: center;
+    padding: 20px;
+}
+.grid-item4 {
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    font-size: 20px;
+}
+.grid-item5 {
+    text-align: center;
+    padding: 20px;
+}
+
+.grid-item6{
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    font-size: 20px;
+}
+
+/* Contact Form */
+div.container{
+    border-radius: 5px;
+    background-color: #0e3257;
+    padding: 100px;
+}
+#fname,#lname, #country,#subject {
+    width: 100%; /* Full width */
+    padding: 15px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical
+}
+
+#name, #lastname, #place, #note{
+    color:white;
+}
+
+.contact_gallery{
+    display: flex;
+    min-height: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    padding: 5px;
+}
+
+.contact_gallery > img{
+    margin: 5px;
+    width: 300px;
+}
+
+.contact_gallery > img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+@-webkit-keyframes logo_wiggle{
+    from{width: 150px;}
+    to {width: 150px;}
+}
+
+@keyframes logo_wiggle{
+    from{width: 150x;}
+    to {width: 150px;}
+}
+
+#face_logo{
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-name: logo_wiggle;
+    -webkit-animation-name: logo_wiggle;
+}
+
+
+@media screen and (prefers-reduced-motion: reduce) {
+    #face_logo {
+      animation:none;
+    }
+}
+ 
+/* Media Queries for Desktop */
+
+@media screen and (min-width: 1025px){
+    .nav_links{
+        flex-direction: row;
+    }
+    .nav_item a, .active a{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 20px;
+    }
+
+    .about{display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-evenly;
+        padding: 50px;
+        grid-gap: 50px;
+    }
+    .grid-container {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 50% 50%;
+        padding: 70px;
+        grid-gap: 50px;
+    }
+    #face_logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+    }
+}
+
+/* Media Queries for Tablet */
+
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    #face_logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%;
+    }
+    .nav_links{
+        flex-direction: row;
+    }
+    .nav_item a, .active a{
+        padding: 15px;
+    }
+    #research{
+        width: 25%;
+        border-radius: 50%; 
+    }
+    #socialmedia{
+        width: 25%;
+        border-radius: 50%;
+    }
+    
+    #connect{
+        width: 25%;
+        border-radius: 50%; 
+    }
+}

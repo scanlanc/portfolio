@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang= "en" >
+    <head>
+        <meta charset="UTF-8">
+        <link rel = 'stylesheet' href='css/html5reset.css'>
+        <link rel = 'stylesheet' href='css/style.css'>
+        <title>Two Art Writers</title>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LSKD2P19Z"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-1LSKD2P19Z');
+        </script>
+    </head>
+    <body>
+        <header> 
+            <div class = "skip-to-content-link">
+                <a href='#main'>
+                    Skip to content
+                </a> 
+            </div>
+            <img src = 'images/logo.jpg' alt = 'face logo' id = 'face_logo'>
+            <a class="landing_page" href= "index.html"><h1> Two Art Writers</h1></a>
+            <nav> 
+                <ul class = 'nav_links'>
+                    <li class="nav_item"><a href="about.html">About</a></li>
+                    <li class="nav_item"><a href="gallery.html">Gallery</a></li>
+                    <li class="nav_item"><a href="services.html">Services</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class = "flip-card" id = main>
+                <div class = "flip-card-inner">
+                    <div class= "flip-card-front" tabindex="0">
+                        <p> Two Art Writers <br><br>
+                        New York City & London<br>
+                        TwoArtWriters@gmail.com</p>
+                    </div>
+                    <div class = "flip-card-back">
+                        <img src = 'images/email.jpg' alt = 'email' id = 'email' >
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <p> We would love to speak with you about any future projects for your 
+                fine art gallery or studio! Please email us at TwoArtWriters@gmail.com or fill out the contact form below. We will contact you as soon as possible to schedule a free 
+            first consultation call.</p>
+            <div class = "contact_gallery">
+                <img src= 'images/contact1.jpg' alt = "gallery1">
+                <img src= 'images/contact2.jpg' alt = "gallery2">
+                <img src= 'images/contact3.jpg' alt = "gallery3">
+                <img src= 'images/contact4.jpg' alt = "gallery4">
+                <img src= 'images/contact5.jpg' alt = "gallery5">
+                <img src= 'images/contact6.jpg' alt = "gallery6">
+            </div>
+
+            <div class="container">
+                <form action="https://formspree.io/f/xpzojegk" method="POST">
+          
+                <label id = "name" for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name" name = "fname">
+          
+                <label id = "lastname" for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name" name = "lname">
+          
+                <label id = "place" for="country">Country</label>
+                <select id="country" name="country" name = "place">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+          
+                <label id = "note" for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something" style="height:200px" name = "message"></textarea>
+          
+                <input type="submit" value="Submit">
+          
+                </form>
+            </div> 
+        </main>
+        
+        <footer>
+            <p>University of Michigan - School of Information <br> Caroline Scanlan 2020 </p>
+        </footer>
+    </body>
+</html>
